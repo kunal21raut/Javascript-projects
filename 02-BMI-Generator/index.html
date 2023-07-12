@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Background Color Scheme Switcher</title>
+</head>
+<body>
+
+<div class="container">
+    <h1><span style="color: blueviolet;">B</span>ody <span style="color: blueviolet;">M</span>ass <span style="color: blueviolet;">I</span>ndex Calculator</h1>
+    <form id="bmiForm">
+      <div class="form-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+      </div>
+      <div class="form-group">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required>
+      </div>
+      <input type="submit" value="Calculate">
+   
+    <div id="results" class="result"></div>
+
+    <div class="bmi-details">
+      <h2>BMI Categories:</h2>
+      <p id="under-weight"><strong>Underweight:</strong> Below 18.5</p>
+      <p id="normal"><strong>Normal weight:</strong> 18.5 - 24.9</p>
+      <p id="over-weight"><strong>Overweight:</strong> 25 - 29.9</p>
+      <p><strong>Obesity:</strong> 30 or higher</p>
+    </div>
+  </div>
+</form>
+
+ 
+</body>
+<script src="bmi.js"></script>
+</html>
