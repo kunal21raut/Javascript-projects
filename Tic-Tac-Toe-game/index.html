@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Square+Peg&family=Ubuntu:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav {
+            background-color: black;
+            color: greenyellow;
+            height: 56px;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+        }
+
+        body {
+            background-color: rgb(121, 26, 209);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gameContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            background-color: #fff;
+            width: 60%;
+            padding: 40px 40px;
+            border-radius: 10px;
+            box-shadow: 3px 4px 30px #171717;
+        }
+
+
+    
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 10vw);
+            grid-template-columns: repeat(3, 10vw);
+            font-family: 'Acme', sans-serif;
+        }
+
+        .box {
+            border: 2px solid black;
+            font-size: 8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .box:hover {
+            background-color: rgb(238, 226, 249)
+        }
+
+        .game-info {
+            padding: 0 34px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .info{
+            font-size: 2.5rem;
+            color: rgb(72, 5, 110);
+            margin: 10px 0;
+        }
+
+        .img-box img {
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+
+        .br-0 {
+            border-right: 0;
+        }
+
+        .bl-0 {
+            border-left: 0;
+        }
+
+        .bt-0 {
+            border-top: 0;
+        }
+
+        .bb-0 {
+            border-bottom: 0;
+        }
+
+        #reset {
+            margin: 10px 3px;
+            padding: 4px 13px;
+            background-color: rgb(245, 189, 245);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        @media screen and (max-width:800px) {}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>TicTacToe</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box bt-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bl-0"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br-0"><span class="boxtext"></span></div>
+            <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="game-info">
+            <h1>Welcome to Tic Tac Toe</h1>
+            <div><span class="info">Turn for X</span></div>
+            <button id="reset">Reset</button>
+            <div class="img-box">
+                <img src="resources/excited.gif" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
